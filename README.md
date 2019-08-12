@@ -7,7 +7,7 @@ This repository contains a template/example for my [Hack The Box](https://hackth
 1. Install [Latex](https://www.latex-project.org/) via `sudo apt-get install texlive`.
 2. Install [Pandoc](https://pandoc.org/) via `sudo apt-get install pandoc`.
 3. Install the [Pandoc Latex Template](https://github.com/Wandmalfarbe/pandoc-latex-template)
-   * Download the latest version of the Eisvogel template from the [release page](Download the latest version of the Eisvogel template from).
+   * Download the latest version of the Eisvogel template from the [release page](https://github.com/Wandmalfarbe/pandoc-latex-template/releases/latest).
    * Extract the `tar.gz` archive and open the folder.
    * Create a pandoc templates folder if it doesn't exist at `~/.pandoc/templates/`.
    * Move the template `eisvogel.tex` to your pandoc templates folder and rename the file to `eisvogel.latex`.
