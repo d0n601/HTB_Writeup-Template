@@ -1,7 +1,7 @@
 # Hack The Box CTF Writeup Template
 This repository contains a template/example for my [Hack The Box](https://hackthebox.eu) writeups. Below you'll find some information on the required tools and general workflow for generating the writeups. I also write about it on my blog [here](https://ryankozak.com/how-i-do-my-ctf-writeups/), which has some details about also posting the markdown on Jekyll.
 
-## Installation on Ubuntu
+## Installation on Ubuntu 18.04
 *Note: If you use Debian or Mint it may work but your mileage here might vary.*
 
 1. Install [Latex](https://www.latex-project.org/) via `sudo apt-get install texlive`.
@@ -11,7 +11,7 @@ This repository contains a template/example for my [Hack The Box](https://hackth
    * Extract the `tar.gz` archive and open the folder.
    * Create a pandoc templates folder if it doesn't exist at `~/.pandoc/templates/`.
    * Move the template `eisvogel.tex` to your pandoc templates folder and rename the file to `eisvogel.latex`.
-4. Make sure you have [PDFtk](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/) installed via `sudo apt-get install pdftk`.
+4. Make sure you have [PDFtk](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/) installed via `sudo snap install pdftk`.
 
 
 ## Usage
