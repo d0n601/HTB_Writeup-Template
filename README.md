@@ -1,7 +1,18 @@
 # Hack The Box CTF Writeup Template
-This repository contains a template/example for my [Hack The Box](https://hackthebox.eu) writeups. Below you'll find some information on the required tools and general workflow for generating the writeups. I also write about it on my blog [here](https://ryankozak.com/how-i-do-my-ctf-writeups/), which has some details about also posting the markdown on Jekyll.
+This repository contains a template/example for my [Hack The Box](https://hackthebox.eu) writeups. Below you'll find some information on the required tools and general work flow for generating the writeups. I also write about it on my blog [here](https://ryankozak.com/how-i-do-my-ctf-writeups/), which has some details about also posting the markdown on Jekyll.
 
-## Installation on Ubuntu 18.04
+## Installation on Arch Linux
+1. Install [Latex](https://www.latex-project.org/) and support packages for Latex via `sudo pacman -S texlive-most`.
+2. Install [Pandoc](https://pandoc.org/) via `sudo pacman -S pandoc`.
+3. Install [PDFtk](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/) via `sudo pacman -S pdftk`.
+4. Install the [Pandoc Latex Template](https://github.com/Wandmalfarbe/pandoc-latex-template)
+   * Download the latest version of the Eisvogel template from the [release page](https://github.com/Wandmalfarbe/pandoc-latex-template/releases/latest).
+   * Extract the `tar.gz` archive and open the folder.
+   * Create a pandoc templates folder if it doesn't exist at `~/.pandoc/templates/`.
+   * Move the template `eisvogel.tex` to your pandoc templates folder and rename the file to `eisvogel.latex`.
+
+
+## Installation on Ubuntu 18.04 LTS
 *Note: If you use Debian or Mint it may work but your mileage here might vary.*
 
 1. Install [Latex](https://www.latex-project.org/) via `sudo apt-get install texlive`.
@@ -58,7 +69,10 @@ logo-width: 350
 ```
 
 Once the writeup is complete, or you're just looking to build it to see how it's looking as a pdf, issue the following command from your writeup directory.
+#### Arch Linux
+`pandoc --pdf-engine=xelatex ./HTB_Writeup-TEMPLATE-d0n601.md -o ./pdf/HTB_Writeup-TEMPLATE-d0n601.pdf --from markdown --template eisvogel --listings`  
 
+#### Ubuntu 18.04
 `pandoc --latex-engine=xelatex ./HTB_Writeup-TEMPLATE-d0n601.md -o ./pdf/HTB_Writeup-TEMPLATE-d0n601.pdf --from markdown --template eisvogel --listings`
 
 
