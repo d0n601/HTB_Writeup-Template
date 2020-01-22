@@ -11,6 +11,8 @@ titlepage-color: "0c0d0e"
 titlepage-rule-color: "8ac53e"
 logo: "./images/badge.png"
 logo-width: 350
+toc: true
+toc-own-page: true
 ...
 
 *Everything below is just random stuff for the sake of example.*
