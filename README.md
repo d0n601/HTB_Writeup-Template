@@ -79,7 +79,7 @@ Once the writeup is complete, or you're just looking to build it to see how it's
 
 
 ### Password Protect pdf
-Once the writeup is complete and ready to publish, it should be protected with the root flag so it doesn't violate [Hack The Box](https://hackthebox.eu) rules, allow people to cheat, and generally spoil the fun.
+**Update:** Now, HTB has dyamic flags, so while this is a nice tutorial on how to password protect a PDF, it doesn't really make sense any more to use your root flag as the password. No one else will have the same root flag as you, so only you'll know how to get in...
 
 To password protect the pdf I use `pdftk`. From the root folder of the writup directory issue the following command.
 
