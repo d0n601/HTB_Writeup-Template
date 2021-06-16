@@ -1,19 +1,19 @@
 ---
 title: "Hack The Box - BOX NAME HERE"
 author: Ryan Kozak
-date: "2019-08-11"
+date: "2021-06-15"
 subject: "CTF Writeup Template"
 keywords: [HTB, CTF, Hack The Box, Security]
 lang: "en"
 titlepage: true
+title-page-color: "141d2b"
+titlepage-rule-color: "11b925"
 titlepage-text-color: "FFFFFF"
-titlepage-color: "0c0d0e"
-titlepage-rule-color: "8ac53e"
-logo: "./images/badge.png"
-logo-width: 350
 toc: true
 toc-own-page: true
+titlepage-background: "./images/bg.pdf"
 ...
+
 
 *Everything below is just random stuff for the sake of example.*
 

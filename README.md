@@ -1,9 +1,11 @@
 # Hack The Box CTF Writeup Template
 This repository contains a template/example for my [Hack The Box](https://hackthebox.eu) writeups. Below you'll find some information on the required tools and general work flow for generating the writeups. I also write about it on my blog [here](https://ryankozak.com/how-i-do-my-ctf-writeups/), which has some details about also posting the markdown on Jekyll.
 
+[![example_cover](./images/example_cover.png)](./pdf/HTB_Writeup-TEMPLATE-d0n601.pdf)
+
 ## Installation on Arch Linux
 1. Install [Latex](https://www.latex-project.org/) and support packages for Latex via `sudo pacman -S texlive-most`.
-2. Install [Pandoc](https://pandoc.org/) via `sudo pacman -S pandoc`.
+2. Install [Pandoc](https://pandoc.org/) via `sudo pacman -S pandoc bcprov java-commons-lang `.
 3. Install [PDFtk](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/) via `sudo pacman -S pdftk`.
 4. Install the [Pandoc Latex Template](https://github.com/Wandmalfarbe/pandoc-latex-template)
    * Download the latest version of the Eisvogel template from the [release page](https://github.com/Wandmalfarbe/pandoc-latex-template/releases/latest).
@@ -43,7 +45,7 @@ HTB_Writeup-TEMPLATE
 │       │   HTB_Writeup-TEMPLATE-d0n601.pdf
 │   
 └───images
-│       │   badge.png
+│       │   bg.pdf
 │       │   someotherimage.png
 │       │   ...
 ```
@@ -55,18 +57,17 @@ In order to generate a pdf from markdown using pandoc we must format the header 
 ---
 title: "Hack The Box - BOX NAME HERE"
 author: Ryan Kozak
-date: "2019-08-11"
+date: "2021-06-15"
 subject: "CTF Writeup Template"
 keywords: [HTB, CTF, Hack The Box, Security]
 lang: "en"
 titlepage: true
+title-page-color: "141d2b"
+titlepage-rule-color: "11b925"
 titlepage-text-color: "FFFFFF"
-titlepage-color: "0c0d0e"
-titlepage-rule-color: "8ac53e"
-logo: "./images/badge.png"
-logo-width: 350
 toc: true
 toc-own-page: true
+titlepage-background: "./images/bg.pdf"
 ...
 ```
 
@@ -79,7 +80,7 @@ Once the writeup is complete, or you're just looking to build it to see how it's
 
 
 ### Password Protect pdf
-**Update:** Now, HTB has dyamic flags, so while this is a nice tutorial on how to password protect a PDF, it doesn't really make sense any more to use your root flag as the password. No one else will have the same root flag as you, so only you'll know how to get in...
+**Update:** Now, HTB has **dyamic flags**, so while this is a nice tutorial on how to password protect a PDF, it doesn't really make sense any more to use your root flag as the password. No one else will have the same root flag as you, so only you'll know how to get in. Some folks are using things like the `/etc/shadow` file's root hash.
 
 To password protect the pdf I use `pdftk`. From the root folder of the writup directory issue the following command.
 
