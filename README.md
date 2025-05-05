@@ -1,5 +1,5 @@
 # Hack The Box CTF Writeup Template
-This repository contains a template/example for my [Hack The Box](https://hackthebox.eu) writeups. Below you'll find some information on the required tools and general work flow for generating the writeups. I also write about it on my blog [here](https://ryankozak.com/how-i-do-my-ctf-writeups/), which has some details about also posting the markdown on Jekyll.
+This repository contains a template/example for my [Hack The Box](https://hackthebox.eu) writeups. Below you'll find some information on the required tools and general work flow for generating the writeups. I also write about it on my blog [here](https://ryankozak.com/posts/how-i-do-my-ctf-writeups/), which has some details about also posting the markdown on Jekyll.
 
 [![example_cover](./images/example_cover.png)](./pdf/HTB_Writeup-TEMPLATE-d0n601.pdf)
 
